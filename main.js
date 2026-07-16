@@ -26,6 +26,7 @@ startBtn.onclick = function () {
     stopBtn.classList.add('active')
     resetBtn.classList.add('active')
     btns.classList.add("active")
+    startBtn.style.display = "none"
     
     condition.textContent = "Timer Is Counting"
     
@@ -33,7 +34,7 @@ startBtn.onclick = function () {
     
     if (interval === true) {return;}
     
-
+    
     let int = setInterval(function () {
         seconds.textContent = String(parseInt(seconds.textContent) + 1).padStart(2, "0")
         
@@ -68,5 +69,6 @@ startBtn.onclick = function () {
         window.localStorage.clear()
         condition.textContent = 'Press "Start" To Start Counting'
         interval = false
+        startBtn.style.display = "block"
     }
 }
