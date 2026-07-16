@@ -27,8 +27,9 @@ startBtn.onclick = function () {
     resetBtn.classList.add('active')
     btns.classList.add("active")
     startBtn.style.display = "none"
+    stopBtn.style.display = "block"
     
-    condition.textContent = "Timer Is Counting"
+    condition.textContent = "Timer Is Counting..."
     
     let s = 1
     
@@ -54,7 +55,10 @@ startBtn.onclick = function () {
     }, 1000)
     stopBtn.onclick = function () {
         clearInterval(int)
-        condition.textContent = "Timer Is Paused"
+        condition.textContent = "Timer Is Paused."
+        stopBtn.style.display = "none"
+        startBtn.style.display = "block"
+        startBtn.textContent = "Continue"
         interval = false
     }
     resetBtn.onclick = function () {
@@ -67,8 +71,10 @@ startBtn.onclick = function () {
         hours.textContent = "00"
         clearInterval(int)
         window.localStorage.clear()
-        condition.textContent = 'Press "Start" To Start Counting'
+        condition.textContent = 'Press "Start" To Start Counting.'
         interval = false
         startBtn.style.display = "block"
+        startBtn.textContent = "Start"
+        stopBtn.style.display = "none"
     }
 }
