@@ -1,5 +1,8 @@
 body {
-    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
     padding: 0 2rem;
     background-color: rgb(231, 234, 236);
 }
@@ -24,7 +27,7 @@ body {
     font-weight: 500;
     border-bottom: 1px white solid;
     border-top: 1px white solid;
-    padding: 12px 0;
+    padding: 12px 8px;
 }
 .btns {
     padding: 0 4rem;
@@ -78,5 +81,5 @@ body {
 .stop.active, .reset.active {
     opacity: 1;
     visibility: visible;
-    display: inline-block;
+    display: block;
 }
