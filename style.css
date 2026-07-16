@@ -1,0 +1,82 @@
+body {
+    margin: 2rem;
+    padding: 0 2rem;
+    background-color: rgb(231, 234, 236);
+}
+#stop-watch {
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+.time {
+    background-color: rgb(24, 23, 23);
+    padding: 20px;
+    font-size: 45px;
+    text-align: center;
+}
+.condition {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    border-bottom: 1px white solid;
+    border-top: 1px white solid;
+    padding: 12px 0;
+}
+.btns {
+    padding: 0 4rem;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    text-transform: uppercase;
+}
+.btns.active {
+    justify-content: space-between;
+}
+.start {
+    background-color: green;
+    padding: 6px 18px;
+    border: white solid 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.start:hover {
+    background-color: rgb(119, 255, 119);
+}
+.stop {
+    background-color: red;
+    padding: 6px 18px;
+    border: white solid 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+}
+.stop:hover {
+    background-color: rgb(253, 131, 131);
+}
+.reset {
+    background-color: gray;
+    padding: 6px 18px;
+    border: white solid 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.reset:hover {
+    background-color: rgb(224, 221, 221);
+}
+.stop, .reset {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+.stop.active, .reset.active {
+    opacity: 1;
+    visibility: visible;
+    display: inline-block;
+}
