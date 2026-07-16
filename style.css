@@ -27,7 +27,7 @@ body {
     font-weight: 500;
     border-bottom: 1px white solid;
     border-top: 1px white solid;
-    padding: 12px 8px;
+    padding: 12px 12px;
     margin-bottom: 10px;
 }
 .btns {
@@ -47,6 +47,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 0 5px;
 }
 .start:hover {
     background-color: rgb(119, 255, 119);
@@ -58,7 +59,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 .stop:hover {
     background-color: rgb(253, 131, 131);
@@ -70,6 +71,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 0 5px;
 }
 .reset:hover {
     background-color: rgb(224, 221, 221);
