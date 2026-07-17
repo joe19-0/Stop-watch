@@ -23,7 +23,7 @@ if (window.localStorage.getItem("hr")) {
 }
 if (parseInt(seconds.textContent) >= 1 || parseInt(minutes.textContent) >= 1 || parseInt(hours.textContent) >= 1) {
     startBtn.textContent = "Continue"
-    condition.textContent = 'Press "Continue" To Continue Counting'
+    condition.textContent = 'Press "Continue" To Continue Counting.'
 }
 
 startBtn.onclick = function () {
