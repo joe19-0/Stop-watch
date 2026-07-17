@@ -21,6 +21,10 @@ if (window.localStorage.getItem("min")) {
 if (window.localStorage.getItem("hr")) {
     hours.textContent = String(window.localStorage.hr).padStart(2, "0")
 }
+if (parseInt(seconds.textContent) >= 1 || parseInt(minutes.textContent) >= 1 || parseInt(hours.textContent) >= 1) {
+    startBtn.textContent = "Continue"
+    condition.textContent = 'Press "Continue" To Continue Counting'
+}
 
 startBtn.onclick = function () {
     stopBtn.classList.add('active')
